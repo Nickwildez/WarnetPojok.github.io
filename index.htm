@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/peakpx (3).jpg">
+    <title>Warnet Pojok</title>
+</head>
+
+<body>
+    <header>
+        <div class="box-header">
+            <div class="judulheader" data-aos="fade-right">
+                <h2><span>Warnet</span> <span>Pojok</span>
+                    <i class="fa-solid fa-computer"></i>
+                </h2>
+            </div>
+
+            <div class="hamburger-refresh">
+                <button class="refresh" onclick="refreshPage()">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+
+                <button class="hamburger" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="isi-nav">
+                <a href="#" id="Home">Home</a>
+                <a href="#warnet">Warnet
+                    <i class="fa-solid fa-computer"></i></a>
+                <a href="#jadwal">Jadwal
+                    <i class="fa-solid fa-calendar-days"></i>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="isi-home">
+            <div class="judulhome" data-aos="fade-right">
+                <h2>
+                    <span>Halo dan selamat datang</span> <span>di warnet pojok!</span>
+                </h2>
+            </div>
+
+            <p class="welcome" data-aos="fade-up">
+                Kami dengan senang hati menyambut Anda ke warnet pojok terpercaya ini.
+                Di sini, kami
+                menyediakan
+                fasilitas lengkap untuk kebutuhan komputasi Anda. Dari bermain game seru hingga menjalankan pekerjaan
+                yang kompleks, kami siap memenuhi segala kebutuhan digital Anda.
+            </p>
+
+            <div class="box-down">
+                <div class="isi-down" data-aos="fade-up">
+                    <a href="#warnet">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-warnet">
+        <div class="isi-about" id="warnet">
+            <div class="judulabout">
+                <h2 data-aos="fade-up">warnet</h2>
+            </div>
+
+            <div class="box-foto">
+                <img src="img/fotowarnet.jpg" alt="foto1" data-aos="fade-up">
+            </div>
+
+            <div class="box-p">
+                <div class="isip" data-aos="fade-right">
+                    <p>
+                        Warnet Pojok juga dikenal karena pelayanannya yang baik. Staf yang ramah dan profesional
+                        siap
+                        membantu pengguna dengan segala kebutuhan mereka. Mereka akan memberikan bantuan teknis jika
+                        diperlukan dan menjawab pertanyaan-pertanyaan pengguna dengan sabar.Salah satu keunggulan
+                        dari Warnet Pojok adalah adanya pilihan ruangan VIP. Jika Anda memilih ruangan VIP, Anda
+                        akan mendapatkan fasilitas tambahan berupa tempat tidur dan cemilan gratis. Hal ini tentu
+                        saja menjadi nilai tambah yang membuat penggunaan ruangan VIP menjadi lebih nyaman dan
+                        menyenangkan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jadwal" id="jadwal">
+        <div class="isijadwal">
+            <div class="juduljadwal">
+                <h2 data-aos="fade-right">jadwal buka</h2>
+            </div>
+
+            <div class="clock" id="jam" data-aos="fade-up">
+
+            </div>
+
+            <table class="tbjadwal" data-aos="fade-up">
+                <thead>
+                    <th data-aos="fade-right">hari :</th>
+                    <th data-aos="fade-right">jam buka :</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-aos="fade-right">Senin - Jumat</td>
+                        <td data-aos="fade-right">09.00 - 23.00</td>
+                    </tr>
+                    <tr>
+                        <td data-aos="fade-right">Sabtu</td>
+                        <td data-aos="fade-right">09.00 - 00.00</td>
+                    </tr>
+                    <tr>
+                        <td data-aos="fade-right">Minggu</td>
+                        <td data-aos="fade-right">Tutup</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="box-form">
+        <div class="isiform">
+            <form action="" name="Pesanan-Warnet" class="form" data-aos="fade-up" id="form-warnet" method="post">
+                <div class="judulform">
+                    <h2 data-aos="fade-up">isi pesanan</h2>
+                </div>
+
+                <input type="text" class="nama" name="Nama-Pemesan" id="nama" placeholder="masukan nama:" required>
+
+                <div class="box-select">
+                    <select name="Meja-ke" id="select1" class="select">
+                        <option value="tidak ada">Pilih Meja:</option>
+                        <option value="meja 1">meja 1</option>
+                        <option value="meja 2">meja 2</option>
+                        <option value="meja 3">meja 3</option>
+                        <option value="meja 4">meja 4</option>
+                        <option value="meja 5">meja 5</option>
+                        <option value="meja 6">meja 6</option>
+                        <option value="meja 7">meja 7</option>
+                        <option value="meja 8">meja 8</option>
+                        <option value="meja 9">meja 9</option>
+                        <option value="meja 10">meja 10</option>
+                        <option value="meja 11">meja 11</option>
+                        <option value="meja 12">meja 12</option>
+                        <option value="meja 13">meja 13</option>
+                        <option value="meja 14">meja 14</option>
+                        <option value="meja 15">meja 15</option>
+                        <option value="meja 16">meja 16</option>
+                        <option value="meja 17">meja 17</option>
+                        <option value="meja 18">meja 18</option>
+                        <option value="meja 19">meja 19</option>
+                        <option value="meja 20">meja 20</option>
+                        <option value="meja 21">meja 21</option>
+                        <option value="meja 22">meja 22</option>
+                        <option value="meja 23">meja 23</option>
+                    </select>
+
+                    <select name="Sewa-jam" id="select2" class="select">
+                        <option value="tidak ada">Sewa Jam:</option>
+                        <option value="1 jam 10Rb">1 jam 10Rb</option>
+                        <option value="2 jam 20Rb">2 jam 20Rb</option>
+                        <option value="3 jam 30Rb">3 jam 30Rb</option>
+                        <option value="4 jam 40Rb">4 jam 40Rb</option>
+                        <option value="5 jam 50Rb">5 jam 50Rb</option>
+                        <option value="6 jam 60Rb">6 jam 60Rb</option>
+                        <option value="7 jam 70Rb">7 jam 70Rb</option>
+                        <option value="8 jam 80Rb">8 jam 80Rb</option>
+                        <option value="9 jam 90Rb">9 jam 90Rb</option>
+                        <option value="10 jam 100Rb">10 jam 100Rb</option>
+                        <option value="11 jam 110Rb">11 jam 110Rb</option>
+                        <option value="12 jam 120Rb">12 jam 120Rb</option>
+                        <option value="13 jam 130Rb">13 jam 130Rb</option>
+                        <option value="VIP seminggu 1.4jt">VIP seminggu 1.4jt</option>
+                    </select>
+                </div>
+
+                <div class="box-date">
+                    <label class="labeldate">pesan dihari :</label>
+                    <input type="datetime-local" name="Pesan-ditanggal" id="datetime-local" class="datelocal" required>
+                </div>
+
+                <div class="box-submit-reset">
+                    <button class="btreset" type="reset">
+                        hapus <i class="fa-solid fa-trash"></i>
+                    </button>
+
+                    <button class="btsubmit" type="submit">
+                        kirim <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="box-popup" id="poPup">
+        <div class="isi-popup">
+            <div class="popup">
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>
+                    terima kasih sudah memesan
+                    <i class="fa-regular fa-face-smile-wink"></i>
+                </p>
+
+                <button class="back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    back
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="box-footer">
+        <div class="isifooter">
+            <div class="judulfooter">
+                <h2>silahkan hubungi</h2>
+            </div>
+
+            <div class="box-contact">
+                <div class="box-li">
+                    <h3>email </h3>
+                    <ul>
+                        <li class="li-email">
+                            <a href="mailto:wildeznick@gmail.com">wildeznick@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box-li">
+                    <h3>no wa </h3>
+                    <ul>
+                        <li class="li-no-wa">
+                            <a
+                                href="https://wa.me/6285774546860?text=Halo,%20saya%20menghubungi%20Anda%20dari%20situs%20web%20anda.">0857-7454-6860</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box-li">
+                    <h3>alamat </h3>
+                    <ul>
+                        <li class="li-alamat">
+                            <a href="https://maps.app.goo.gl/r6MvHPvCmU4D1aUv7">andara, jln.sungai</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- animation data AOS fade -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+
+    <!-- untuk refresh dibrowser -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add("loaded");
+        })
+    </script>
+
+    <!-- untuk button refresh  -->
+    <script>
+        function refreshPage() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(function () {
+                location.reload(true);
+            }, 500);
+        }
+    </script>
+
+    <!-- untuk membuka nav -->
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('show');
+        }
+    </script>
+
+    <!-- untuk jam -->
+    <script>
+        function updateJam() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            document.getElementById('jam').innerHTML = 'jam:' + formatDigital(hours) + ':' + formatDigital(minutes) + ':' + formatDigital(seconds);
+
+            setTimeout(updateJam, 1000);
+        }
+        function formatDigital(digit) {
+            return digit < 10 ? '0' + digit : digit;
+        }
+
+        updateJam();
+    </script>
+
+    <!-- untuk pengiriman data form ke spreadsheets -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyA7uIz1BcJ_jDUphKle3qonGEBzpzLu0VOEn18ccTdUhck83vzdDO7mtXckDpysxJh/exec'
+        const form = document.forms['Pesanan-Warnet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    document.getElementById("poPup").style.display = "grid";
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        });
+
+        document.querySelector(".back").onclick = function () {
+            document.getElementById("poPup").style.display = "none";
+        };
+
+        document.addEventListener("click", function (event) {
+            const popup = document.querySelector(".popup");
+            if (event.target !== popup && !popup.contains(event.target)) {
+                document.getElementById("poPup").style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

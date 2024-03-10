@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+    text-transform: capitalize;
+    -webkit-tap-highlight-color: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+header {
+    background-color: rgb(16, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.box-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.judulheader h2 span:first-of-type {
+    color: rgb(255, 0, 191);
+}
+
+.hamburger-refresh {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    color: white;
+}
+
+.hamburger-refresh .refresh,
+.hamburger {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.hamburger-refresh .refresh:hover {
+    transition: 0.6s ease-in-out;
+    color: rgb(255, 0, 191);
+    animation: putar 2s infinite;
+}
+
+@keyframes putar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(100deg);
+    }
+
+    1000% {
+        transform: rotate(250deg);
+    }
+}
+
+.hamburger-refresh .hamburger:hover {
+    color: rgb(255, 0, 191);
+    transition: 0.6s ease-in-out;
+}
+
+nav {
+    display: none;
+    background-color: rgb(16, 26, 26);
+    border-radius: 20px;
+    top: 65px;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    border-bottom: 3px solid white;
+    color: white;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+nav.show {
+    opacity: 1;
+    display: grid;
+}
+
+nav .isi-nav {
+    width: 100%;
+    position: relative;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.isi-nav a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(32, 63, 63);
+    transition: 0.6s ease-in-out;
+}
+
+.isi-nav a:hover {
+    background-color: rgb(255, 0, 191);
+}
+
+.home {
+    background: url("img/peakpx\ \(3\).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.isi-home {
+    border: none;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+.judulhome h2 span {
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.judulhome h2 span:first-of-type {
+    color: rgb(255, 0, 191);
+    width: 100%;
+}
+
+.welcome {
+    color: white;
+    background-color: rgba(85, 29, 77, 0.562);
+    border: none;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.box-down {
+    width: 100%;
+    display: grid;
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+.isi-down {
+    width: 100%;
+    position: relative;
+    display: grid;
+    border: none;
+}
+
+.isi-down a {
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(170, 170, 170);
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    font-size: 1.4rem;
+}
+
+.isi-down a:hover {
+    color: white;
+    transform: translateY(10px);
+}
+
+.about-warnet {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.isi-about {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.judulabout {
+    width: 100%;
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.judulabout h2 {
+    width: 100%;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    font-size: 3rem;
+    position: relative;
+}
+
+.box-foto {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.box-foto img {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    border: none;
+}
+
+.box-p {
+    width: 100%;
+    display: grid;
+    padding: 10px;
+}
+
+.isip {
+    width: 100%;
+    position: relative;
+}
+
+.isip p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: left;
+    position: relative;
+}
+
+.jadwal {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.isijadwal {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    position: relative;
+}
+
+.juduljadwal {
+    width: 100%;
+    display: grid;
+}
+
+.juduljadwal h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    position: relative;
+}
+
+#jam {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    color: aqua;
+    font-size: 2rem;
+}
+
+.tbjadwal {
+    border: 3px solid white;
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgb(10, 22, 22);
+}
+
+th,
+td {
+    padding: 10px;
+    border: 3px solid white;
+}
+
+.box-form {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border: none;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.isiform {
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    border: none;
+    width: 100%;
+}
+
+.judulform h2 {
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    background-color: rgb(45, 131, 131);
+    border-radius: 10px 10px 0 0;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    gap: 20px;
+}
+
+.nama {
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    border-radius: 10px;
+    font-weight: 400;
+    transition: 0.6s ease-in-out;
+    background-color: rgba(10, 22, 22);
+}
+
+.nama:hover {
+    box-shadow: 0 0 10px 5px aqua;
+}
+
+.nama::placeholder {
+    color: rgb(170, 170, 170);
+    width: 100%;
+    position: relative;
+    font-weight: 400;
+    transition: 0.6s ease-in-out;
+}
+
+.nama:hover::placeholder {
+    color: white;
+    padding-left: 15px;
+}
+
+.box-select {
+    width: 100%;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.select {
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(10, 22, 22);
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.6s ease-in-out;
+    width: 100%;
+}
+
+.select:hover {
+    box-shadow: 0 0 10px 5px aqua;
+}
+
+.box-date {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.labeldate {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.datelocal {
+    font-size: 1.2rem;
+    border: none;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(170, 170, 170);
+    background-color: rgb(10, 22, 22);
+    width: 100%;
+    font-weight: 400;
+    transition: 0.6s ease-in-out;
+}
+
+.datelocal:hover {
+    color: white;
+    box-shadow: 0 0 10px 5px aqua;
+}
+
+.box-submit-reset {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.btreset {
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(10, 22, 22);
+    transition: 0.6s ease-in-out;
+}
+
+.btreset:hover {
+    box-shadow: 0 0 10px 5px aqua;
+}
+
+.btsubmit {
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(10, 22, 22);
+    text-align: center;
+    transition: 0.6s ease-in-out;
+}
+
+.btsubmit:hover {
+    box-shadow: 0 0 10px 5px aqua;
+}
+
+.box-popup {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: fixed;
+    min-height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: url("img/peakpx\ \(3\).jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-popup::-webkit-scrollbar {
+    display: none;
+}
+
+.isi-popup {
+    width: 100%;
+    z-index: 4;
+    padding: 20px;
+    border: none;
+    position: relative;
+}
+
+.popup {
+    width: 100%;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(10, 22, 22);
+    color: white;
+    box-shadow: 0 0 10px 0 aqua;
+    padding: 20px;
+}
+
+.popup span i {
+    font-size: 5rem;
+    background-color: rgb(0, 255, 0);
+    padding: 20px;
+    top: -60%;
+    box-shadow: 0 0 10px 0 aqua;
+    position: relative;
+    border: 10px solid rgb(10, 22, 22);
+    color: white;
+    border-radius: 50%;
+}
+
+.popup p{
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    transform: translateY(-30px);
+    font-size: 1.5rem;
+}
+
+.popup .back{
+    background-color: rgb(32, 63, 63);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    transform: translateY(-10px);
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 15px;
+    transition: 0.6s ease-in-out;
+    color: white;
+}
+
+.popup .back:hover{
+    box-shadow: 0 0 10px 0 aqua;
+    background-color: rgb(16, 26, 26);
+}
+
+.box-footer{
+    display: grid;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.judulfooter h2{
+    width: 100%;
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(45, 131, 131);
+}
+
+.isifooter{
+    width: 100%;
+    display: grid;
+    position: relative;
+}
+
+.box-contact{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    background-color: #24262b;
+    width: 100%;
+    position: relative;
+}
+
+.box-li {
+    width: 100%;
+    position: relative;
+    border: none;
+    display: grid;
+}
+
+.box-li h3{
+    text-align: left;
+    font-weight: 400;
+    border: none;
+    position: relative;
+    font-size: 1.5rem;
+    width: 100%;
+
+}
+
+.box-li h3::before{
+    content: '';
+    position: absolute;
+    background-color: #ff00bf;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 20%;
+}
+
+.box-li ul{
+    position: relative;
+    border: none;
+    text-align: left;
+    width: 100%;
+}
+
+.box-li ul li{
+    list-style: none;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.box-li li a{
+    color: rgb(170, 170, 170);
+    position: relative;
+    text-align: left;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    transition: 0.6s ease-in-out;
+
+}
+
+.box-li li a:hover{
+    color: white;
+    padding-left: 10px;
+}
