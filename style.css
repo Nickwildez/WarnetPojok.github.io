@@ -10,7 +10,7 @@
     scroll-behavior: smooth;
     font-family: "poppins", sans-serif;
     text-transform: capitalize;
-    -webkit-tap-highlight-color: none;
+    -webkit-tap-highlight-color: transparent;
     text-decoration: none;
     user-select: none;
 }
@@ -333,7 +333,7 @@ nav .isi-nav {
     text-align: center;
     font-weight: bold;
     position: relative;
-    color: aqua;
+    color: #ff00bf;
     font-size: 2rem;
 }
 
@@ -677,7 +677,7 @@ form {
 .box-li h3::before{
     content: '';
     position: absolute;
-    background-color: #ff00bf;
+    background-color: #00ffff;
     left: 0;
     bottom: 0;
     height: 2px;
