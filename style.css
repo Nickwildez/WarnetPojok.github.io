@@ -224,7 +224,7 @@ nav .isi-nav {
 
 .isi-down a:hover {
     color: white;
-    transform: translateY(10px);
+    transform: translateY(15px);
 }
 
 .about-warnet {
@@ -270,6 +270,8 @@ nav .isi-nav {
 
 .box-foto img {
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     width: 100%;
     border: none;
@@ -393,6 +395,8 @@ form {
     border-radius: 10px;
     background-position: center;
     background-size: cover;
+    background-color: transparent;
+    border: none;
     position: relative;
     display: grid;
     gap: 20px;
@@ -652,7 +656,7 @@ form {
     display: grid;
     gap: 10px;
     padding: 10px;
-    background-color: #24262b;
+    background-color: transparent;
     width: 100%;
     position: relative;
 }
