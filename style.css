@@ -708,6 +708,10 @@ form {
 
 .box-contact a {
     color: white;
+<<<<<<< HEAD
+=======
+    font-weight: 400;
+>>>>>>> 0159728b193434133f5ee60917d06b061b02d656
     font-size: 2rem;
     padding: 10px;
     border: 2px solid white;
@@ -785,4 +789,8 @@ form {
     font-weight: 400;
     width: 100%;
     position: relative;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0159728b193434133f5ee60917d06b061b02d656
